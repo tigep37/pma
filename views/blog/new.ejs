@@ -1,0 +1,30 @@
+<% include ../partials/header %>
+
+<div class="container form-container">
+    <div class="row">
+        <div class="col-10 m-auto">
+            <h3>New Blog Entry</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 m-auto">
+            <form action="/blog" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="name" name="name">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="image url" name="image">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="blogPost" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-secondary">Submit</button>
+                    <a class="btn btn-outline-secondary" href="/blog">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+<% include ../partials/footer %>

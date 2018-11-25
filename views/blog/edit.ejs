@@ -1,0 +1,30 @@
+<% include ../partials/header %>
+
+<div class="container form-container">
+    <div class="row">
+        <div class="col-10 m-auto">
+            <h3>Edit Blog Entry: <%= blog.name %></h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 m-auto">
+            <form action="/blog/<%= blog._id %>?_method=PUT" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" value="<%= blog.name %>" name="blog[name]">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="<%= blog.image %>" name="blog[image]">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="blog[blogPost]" rows="10"><%= blog.body %></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-secondary">Submit</button>
+                    <a class="btn btn-outline-secondary" href="/blog/<%= blog._id %>">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+<% include ../partials/footer %>

@@ -1,0 +1,30 @@
+<% include ../partials/header %>
+
+    <!-- Begin Shop-->
+    <section class="container-fluid px-0">
+        <div class="row text-center sectionTitle">
+            <div class="col-12">
+                <h1><%= item.name %></h1>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="shopCards">
+        <div class="row text-center d-flex justify-content-around">
+            <div class="col-12">
+                <div class="card">
+                    <img class="card-img-top" src="<% item.image %>">
+                    <div class="card-body">
+                        <p class="card-text"><%= item.description %></p>
+                        <p class="card-text">$<%= item.price %></p>
+                        <% if(currentUser && currentUser.isAdmin){ %>
+                            <a href="/shop/<%= item._id %>/edit" class="btn btn-secondary">Edit</a>
+                            <form action="/shop/<%= item._id %>?_method=DELETE" method="POST" class="delete-form">
+                                <button class="btn btn-outline-danger">Delete</button>
+                            </form>
+                        <% }; %>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<% include ../partials/footer %>

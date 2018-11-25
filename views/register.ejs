@@ -1,0 +1,29 @@
+<% include ./partials/header %>
+
+<div class="container form-container">
+    <div class="row">
+        <div class="col-6 m-auto">
+            <h3>Create User Account</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 m-auto">
+            <form action="/register" method="POST">                
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="email" placeholder="enter your email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" placeholder="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-secondary">Sign Up!</button>
+                    <a class="btn btn-outline-secondary" href="/">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<% include ./partials/footer %>

@@ -1,0 +1,26 @@
+<% include ../partials/header %>
+
+    <div class="container">
+    <% blogs.forEach(function(blog){ %>
+        <div class="col-md-9">
+            <div class="thumbnail">
+                <img class="img-responsive" src="<%= blog.image %>">
+                <div class="caption">
+                    <h4><a href=""><%= blog.name %></a></h4>
+                    <p><%= blog.body %></p>
+                    <p>
+                        <em>Submitted by </em><%= blog.author.username %>
+                    </p>
+                    <% if(currentUser && blog.author.id.equals(currentUser._id)){ %>
+                        <a href="/blog/<%= blog._id %>/edit" class="btn btn-warning">Edit</a>
+                        <form action="/blog/<%= blog._id %>?_method=DELETE" method="POST" class="delete-form">
+                            <button class="btn btn-danger">Delete</button>
+                        </form>
+                    <% }; %>
+                </div>
+            </div>
+        </div
+    <% }); %>
+    </div>
+        
+<% include ../partials/footer %>
