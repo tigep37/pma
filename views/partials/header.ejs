@@ -17,7 +17,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
 
-    <title>PMA MASSAGE</title>
+    <title><%= page.toUpperCase() %> | PMA MASSAGE</title>
   </head>
   <body>
         <!--Navigation-->
@@ -37,9 +37,22 @@
                     <li class="nav-item <%= typeof page !== 'undefined' && page === 'shop' ? 'active' : '' %>">
                         <a href="/shop" class="nav-link">SHOP</a>
                     </li>
-                    <li class="nav-item <%= typeof page !== 'undefined' && page === 'blog' ? 'active' : '' %>">
-                        <a href="/blog" class="nav-link">BLOG</a>
-                    </li>
+                    <!--<li class="nav-item <%= typeof page !== 'undefined' && page === 'blog' ? 'active' : '' %>">-->
+                    <!--    <a href="/blog" class="nav-link">BLOG</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item dropdown">-->
+                    <!--    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                    <!--        Dropdown-->
+                    <!--    </a>-->
+                    <!--    <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+                    <!--        <a class="dropdown-item <%= typeof page !== 'undefined' && page === 'about' ? 'active' : '' %>" href="#">Action</a>-->
+                    <!--        <a class="dropdown-item <%= typeof page !== 'undefined' && page === 'about' ? 'active' : '' %>" href="#">Another action</a>-->
+                    <!--        <div class="dropdown-divider"></div>-->
+                    <!--        <a class="dropdown-item <%= typeof page !== 'undefined' && page === 'shop' ? 'active' : '' %>" href="#">SHOP</a>-->
+                    <!--        <div class="dropdown-divider"></div>-->
+                    <!--        <a class="dropdown-item <%= typeof page !== 'undefined' && page === 'blog' ? 'active' : '' %>" href="/blog">BLOG</a>-->
+                    <!--    </div>-->
+                    <!--</li>-->
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -79,7 +92,7 @@
         </section>  
 
         <!-- Begin Header -->
-        <section class="jumbotron text-center" id="header" style="<%= error  ? 'margin-top: 25px;' : '' %>">
+        <section class="jumbotron text-center" id="header" style="<%= error ? 'margin-top: 25px;' : '' %>">
             <h1>PMA MASSAGE AND ACUPUNCTURE</h1>
             <p>FEEL BETTER</p>               
         </section>

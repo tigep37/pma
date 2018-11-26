@@ -14,8 +14,6 @@ body {
 .active {
     font-weight: 600;
     color: #3F6433;
-    /*border-radius: 10%;*/
-    /*border: 2px solid #3F6433;*/
 }
 
 #mainNavBar .nav-link:hover {
@@ -65,10 +63,14 @@ body {
 }
 
 .sectionTitle {
-    background: #3F6433;
+    /*background: #3F6433;*/
     font-weight: 700;
-    color: #FFFFFF;
-    padding: 20px 0;
+    color: #3F6433;
+    /*padding: 20px 0;*/
+}
+
+.sectionTitle h1 {
+    font-size: 3.25rem;
 }
 
 .content {

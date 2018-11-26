@@ -14,7 +14,8 @@ var shopRoutes = require('./routes/shop'),
     blogRoutes = require('./routes/blog'),
     indexRoutes = require('./routes/index');
     
-//set database connection    
+//set database connection  
+console.log(process.env.DATABASEURL);
 mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
 
 //use body parser 
