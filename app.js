@@ -15,8 +15,7 @@ var shopRoutes = require('./routes/shop'),
     indexRoutes = require('./routes/index');
     
 //set database connection    
-//mongoose.connect('mongodb://localhost/pma', { useNewUrlParser: true });//local
-mongoose.connect('mongodb://tige:FatFrank37@ds163656.mlab.com:63656/pma', { useNewUrlParser: true });//mlab sandbox
+mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
 
 //use body parser 
 app.use(bodyParser.urlencoded({extended: true}));
