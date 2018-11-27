@@ -38,6 +38,7 @@ body {
 #header {
     margin-top: 75px;
     background: url("../images/mainPage.jpg") center center / cover no-repeat;
+    height: 400px;
 }
 
 #header h1 {
@@ -63,14 +64,10 @@ body {
 }
 
 .sectionTitle {
-    /*background: #3F6433;*/
+    background: #3F6433;
     font-weight: 700;
-    color: #3F6433;
-    /*padding: 20px 0;*/
-}
-
-.sectionTitle h1 {
-    font-size: 3.25rem;
+    color: #FFFFFF;
+    padding: 20px;
 }
 
 .content {
@@ -118,6 +115,58 @@ body {
 
 #alertBanner {
     margin-top: 75px;
+}
+
+#footerNavBar {
+   height: 200px;
+}
+
+#footerNavBar h4 {
+    color: #3F6433;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#footerNavBar p {
+    line-height: .5em;
+    padding-left: 5px;
+}
+
+#footerNavBar a {
+    line-height: .5em;
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#footerNavBar a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+#footerTop {
+    height: 70%;
+    width: 100%;
+}
+
+#footerBottom {
+    height: 30%;
+    width: 100%;
+}
+
+.footerCopy {
+    color: #3F6433;
+    font-size: .75rem;
+    display: block;
+}
+
+.footerCopy a {
+    color: #3F6433;
+    font-size: .8rem;
+}
+
+.socialMedia i {
+    font-size: 1.5em;
+    color: #3F6433;
 }
 
 @media (max-width: 1200px){

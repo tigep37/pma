@@ -37,30 +37,8 @@
                     <li class="nav-item <%= typeof page !== 'undefined' && page === 'shop' ? 'active' : '' %>">
                         <a href="/shop" class="nav-link">SHOP</a>
                     </li>
-                    <!--<li class="nav-item <%= typeof page !== 'undefined' && page === 'blog' ? 'active' : '' %>">-->
-                    <!--    <a href="/blog" class="nav-link">BLOG</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item dropdown">-->
-                    <!--    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-                    <!--        Dropdown-->
-                    <!--    </a>-->
-                    <!--    <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-                    <!--        <a class="dropdown-item <%= typeof page !== 'undefined' && page === 'about' ? 'active' : '' %>" href="#">Action</a>-->
-                    <!--        <a class="dropdown-item <%= typeof page !== 'undefined' && page === 'about' ? 'active' : '' %>" href="#">Another action</a>-->
-                    <!--        <div class="dropdown-divider"></div>-->
-                    <!--        <a class="dropdown-item <%= typeof page !== 'undefined' && page === 'shop' ? 'active' : '' %>" href="#">SHOP</a>-->
-                    <!--        <div class="dropdown-divider"></div>-->
-                    <!--        <a class="dropdown-item <%= typeof page !== 'undefined' && page === 'blog' ? 'active' : '' %>" href="/blog">BLOG</a>-->
-                    <!--    </div>-->
-                    <!--</li>-->
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="mailto:mia.moore.pma@gmail.com">mia.moore.pma@gmail.com</a>
-                    </li>
-                    <li class="nav-item d-none d-sm-block">
-                        <a class="nav-link" href="#">415-608-3745</a>
-                    </li>
                     <!-- start login section -->
                     <% if(!currentUser){ %>
                         <li class="nav-item <%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a class="nav-link" href="/login">Login</a></li>
