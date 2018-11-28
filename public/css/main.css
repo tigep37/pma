@@ -1,3 +1,10 @@
+/*colors 
+3F6433 dark green rgba(63, 100, 51, 1)
+769F5E med green
+BABF78 light green/yellow
+
+*/
+
 body {
     font-family: "Nunito";
 }
@@ -64,10 +71,11 @@ body {
 }
 
 .sectionTitle {
-    background: #3F6433;
-    font-weight: 700;
+    background: rgba(63, 100, 51, .7);
+    font-weight: 400;
     color: #FFFFFF;
     padding: 20px;
+    text-transform: uppercase;
 }
 
 .content {
@@ -129,18 +137,25 @@ body {
 
 #footerNavBar p {
     line-height: .5em;
-    padding-left: 5px;
+    margin-bottom: 8px;
 }
 
 #footerNavBar a {
     line-height: .5em;
-    padding-left: 5px;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
+    color: #3F6433;
+    font-size: .75rem;
+    margin-top: 2px;
 }
 
 #footerNavBar a:hover {
     color: rgba(0, 0, 0, 1);
+}
+
+#footerNavBar img {
+    height: 100px;
+    width: 100px;
+    border: 3px solid #769F5E;
 }
 
 #footerTop {

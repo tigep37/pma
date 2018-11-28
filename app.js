@@ -15,8 +15,8 @@ var shopRoutes = require('./routes/shop'),
     indexRoutes = require('./routes/index');
     
 //set database connection 
-mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
-//mongoose.connect('mongodb://localhost/pma', { useNewUrlParser: true });//local
+//mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost/pma', { useNewUrlParser: true });//local
 
 //use body parser 
 app.use(bodyParser.urlencoded({extended: true}));
