@@ -1,14 +1,20 @@
 <% include ./partials/header %>
 
-<div class="container form-container">
+<div class="container-fluid form-container">
     <div class="row">
-        <div class="col-6 m-auto">
+        <div class="col-10 col-sm-6 m-auto">
             <h3>Create User Account</h3>
         </div>
     </div>
     <div class="row">
-        <div class="col-6 m-auto">
+        <div class="col-10 col-sm-6 m-auto">
             <form action="/register" method="POST">                
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="first name" name="firstname" required>
+                </div>                
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="last name" name="lastname" required>
+                </div>                
                 <div class="form-group">
                     <input class="form-control" type="text" placeholder="username" name="username" required>
                 </div>
@@ -19,11 +25,12 @@
                     <input class="form-control" type="password" placeholder="password" name="password" required>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-secondary">Sign Up!</button>
+                    <button class="btn btn-secondary">Register</button>
                     <a class="btn btn-outline-secondary" href="/">Cancel</a>
                 </div>
             </form>
         </div>
     </div>
+</div>
 
 <% include ./partials/footer %>

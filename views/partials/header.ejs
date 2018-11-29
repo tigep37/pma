@@ -42,7 +42,7 @@
                     <!-- start login section -->
                     <% if(!currentUser){ %>
                         <li class="nav-item <%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a class="nav-link" href="/login">Login</a></li>
-                        <li class="nav-item <%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a class="nav-link" href="/register">Sign Up</a></li>
+                        <li class="nav-item <%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a class="nav-link" href="/register">Register</a></li>
                     <% } else { %>
                         <li class="nav-item"><a class="nav-link" href="/">Signed in as <%= currentUser.username %></a></li>
                         <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
@@ -51,26 +51,3 @@
                 </ul>
             </div>
         </nav>
-        
-        <div class="container" id="alertBanner">
-         <% if(error && error.length > 0) { %>
-           <div class="alert alert-danger"><p><%=error %></p></div>
-         <% } %>
-         
-         <% if(success && success.length > 0) { %>
-           <div class="alert alert-success"><p><%= success %></p></div>
-         <% } %>
-        </div>
-
-        <!-- Begin small screens book appt button-->
-        <section class="container-fluid px-0 d-block d-sm-none text-center" id="mobileButton" style="<%= error  ? 'margin-top: 25px;' : '' %>">
-            <a href="tel:4156083745" class="btn btn-secondary">
-                CALL
-            </a>
-        </section>  
-
-        <!-- Begin Header -->
-        <section class="jumbotron text-center" id="header" style="<%= error ? 'margin-top: 25px;' : '' %>">
-            <h1>PMA MASSAGE AND ACUPUNCTURE</h1>
-            <p>FEEL BETTER</p>               
-        </section>

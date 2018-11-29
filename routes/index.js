@@ -22,7 +22,7 @@ router.get('/register', function(req, res) {
 //handle register
 router.post('/register', function(req, res) {
     //TODO: change default role
-    var newUser = new User({username: req.body.username, email: req.body.email, role: "admin"});
+    var newUser = new User({username: req.body.username, email: req.body.email, firstname: req.body.firstname, lastname: req.body.lastname, phone: req.body.phone});
     User.register(newUser, req.body.password, function(err, user){
         if(err){
             req.flash('error', err.message);
@@ -30,7 +30,7 @@ router.post('/register', function(req, res) {
         }
         passport.authenticate('local')(req, res, function(){
             req.flash('success', 'New profile successfully created: ' + user.username);
-            res.redirect('/shop');
+            res.redirect('/');
         });
     });
 });
@@ -42,7 +42,7 @@ router.get('/login', function(req, res) {
 
 //handle login
 router.post('/login', passport.authenticate('local', {
-    successRedirect: '/shop',
+    successRedirect: '/',
     failureRedirect: '/login'
 }), function(req, res){
     
@@ -52,7 +52,7 @@ router.post('/login', passport.authenticate('local', {
 router.get('/logout', function(req, res) {
     req.logout();
     req.flash('success', 'Logged Out');
-    res.redirect('/shop');
+    res.redirect('/');
 });
 
 //checks login status

@@ -1,0 +1,24 @@
+
+        
+        <div class="container" id="alertBanner">
+         <% if(error && error.length > 0) { %>
+           <div class="alert alert-danger"><p><%=error %></p></div>
+         <% } %>
+         
+         <% if(success && success.length > 0) { %>
+           <div class="alert alert-success"><p><%= success %></p></div>
+         <% } %>
+        </div>
+
+        <!-- Begin small screens book appt button-->
+        <section class="container-fluid px-0 d-block d-sm-none text-center" id="mobileButton" style="<%= error  ? 'margin-top: 25px;' : '' %>">
+            <a href="tel:4156083745" class="btn btn-secondary">
+                CALL
+            </a>
+        </section>  
+
+        <!-- Begin Header -->
+        <section class="jumbotron text-center" id="header" style="<%= error ? 'margin-top: 25px;' : '' %>">
+            <h1>PMA MASSAGE AND ACUPUNCTURE</h1>
+            <p>FEEL BETTER</p>               
+        </section>

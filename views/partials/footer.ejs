@@ -1,4 +1,4 @@
-    <nav class="navbar bottom navbar-light bg-light" id="footerNavBar">
+    <nav class="navbar bottom navbar-light bg-light <%= typeof page !== 'undefined' && page === 'login' || page === 'register' ? 'fixed-bottom' : ''%>" id="footerNavBar">
         <div id="footerTop">
             <div class="container">
                 <div class="row">
@@ -7,7 +7,7 @@
                         <p>123 fake st</p>
                         <p>el dorado hills CA</p>
                         <a href="#">415-608-3745</a>
-                        <a href="https://goo.gl/maps/dNDXoakRzMN2"><i class="fas fa-map-marker-alt"></i> Find us!</a>
+                        <a href="https://goo.gl/maps/dNDXoakRzMN2" target="_blank"><i class="fas fa-map-marker-alt"></i> Find us!</a>
                     </div>
                     <div class="col-6 col-sm-2 text-right text-sm-left">
                         <a href="https://goo.gl/maps/dNDXoakRzMN2" target="_blank"><img src="images/map.png"></a>
