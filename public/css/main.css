@@ -186,6 +186,13 @@ body {
     color: #3F6433;
 }
 
+.profile {
+    font-size: 20px; 
+    font-weight: 400; 
+    padding: 10px 0; 
+    color: #3F6433;
+}
+
 @media (max-width: 1200px){
     #header {
         margin-top: 20px;

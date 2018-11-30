@@ -10,19 +10,28 @@
         <div class="col-10 col-sm-6 m-auto">
             <form action="/register" method="POST">                
                 <div class="form-group">
+                    <label for="firstname">First Name</label>
                     <input class="form-control" type="text" placeholder="first name" name="firstname" required>
                 </div>                
                 <div class="form-group">
+                    <label for="lastname">Last Name</label>
                     <input class="form-control" type="text" placeholder="last name" name="lastname" required>
-                </div>                
-                <div class="form-group">
-                    <input class="form-control" type="text" placeholder="username" name="username" required>
                 </div>
                 <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input class="form-control" type="text" placeholder="enter your phone number" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
                     <input class="form-control" type="email" placeholder="enter your email" name="email" required>
+                </div>               
+                <div class="form-group">
+                    <label for="username">User Name </label>
+                    <input class="form-control" type="text" placeholder="create a unique username" name="username" required>
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="password" placeholder="password" name="password" required>
+                    <label for="password">Password</label>
+                    <input class="form-control" type="password" placeholder="enter a unique password (5-10 characters)" name="password" required>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-secondary">Register</button>
