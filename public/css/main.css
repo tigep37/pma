@@ -9,65 +9,9 @@ body {
     font-family: "Nunito";
 }
 
-#mainNavBar {
-    font-size: .9rem;
-    font-weight: 300;
-}
-
-#mainNavBar .nav-link {
-    font-weight: 600;
-}
-
 .active {
     font-weight: 600;
     color: #3F6433;
-}
-
-#mainNavBar .nav-link:hover {
-    font-weight: 600;
-    color: #3F6433;
-}
-
-#mainNavBar .navbar-brand {
-    color: #3F6433;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-#mainNavBar .btn:hover {
-    color: #FFFFFF;
-}
-
-#mobileButton {
-    margin-top:75px;
-}
-
-#header {
-    margin-top: 75px;
-    background: url("../images/mainPage.jpg") center center / cover no-repeat;
-    height: 400px;
-}
-
-#header h1 {
-    font-weight: 700;
-    color: #FFFFFF;
-}
-
-#header p {
-    font-weight: 700;
-    color: #FFFFFF;
-}
-
-#hoursSection {
-    margin-bottom: 30px;
-}
-
-#hoursSection h2 {
-    color: #3F6433;
-}
-
-#hoursSection h3 {
-    font-size: 1.25rem;
 }
 
 .sectionTitle {
@@ -91,19 +35,81 @@ body {
     font-size: 1rem;
 }
 
-#shopCards {
-    margin-top: 20px;
+/*header styles*/
+
+#header {
+    margin-top: 75px;
+    background: url("../images/mainPage.jpg") center center / cover no-repeat;
+    height: 400px;
 }
 
-.card-title {
-    color: #3F6433;
+#header h1 {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+#header p {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/*navbar styles*/
+
+#mainNavBar {
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+#mainNavBar .nav-link {
     font-weight: 600;
-    text-transform: uppercase;
 }
 
-.card {
-    margin-bottom: 20px;
+#mainNavBar .nav-link:hover {
+    font-weight: 600;
+    color: #3F6433;
 }
+
+#mainNavBar .navbar-brand {
+    color: #3F6433;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#mainNavBar .btn:hover {
+    color: #FFFFFF;
+}
+
+/*hours styles*/
+
+#hoursSection {
+    margin-bottom: 30px;
+}
+
+#hoursSection h2 {
+    color: #3F6433;
+}
+
+#hoursSection h3 {
+    font-size: 1.25rem;
+}
+
+
+/*#shopCards {*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*.card-title {*/
+/*    color: #3F6433;*/
+/*    font-weight: 600;*/
+/*    text-transform: uppercase;*/
+/*}*/
+
+/*.card {*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+
+/*form styles*/
 
 .form-container {
     margin-top: 100px;
@@ -119,13 +125,8 @@ body {
     display: inline;
 }
 
-.about h1 {
-    color: #3F6433;
-}
 
-#alertBanner {
-    margin-top: 75px;
-}
+/*footer styles*/
 
 #footerNavBar {
    height: 200px;
@@ -186,11 +187,35 @@ body {
     color: #3F6433;
 }
 
+/*about styles*/
+
+#about {
+    background: white url('../images/about1.png') 90% no-repeat;
+    background-size: auto 100%;
+    margin: 20px 0;
+}
+
+/*misc styles*/
+
+#mobileButton {
+    margin-top:75px;
+}
+
+#alertBanner {
+    margin-top: 75px;
+}
+
 .profile {
     font-size: 20px; 
     font-weight: 400; 
     padding: 10px 0; 
     color: #3F6433;
+}
+
+@media screen and ( max-width: 991px ) {
+    #about .container {
+        background: rgba(255, 255, 255, 0.6);
+    }
 }
 
 @media (max-width: 1200px){
