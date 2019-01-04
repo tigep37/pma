@@ -25,6 +25,7 @@ body {
 .content {
     margin-top: 10px;
     margin-bottom: 50px;
+    min-height: calc(65vh - 70px);
 }
 
 .content h2 {
@@ -190,8 +191,8 @@ body {
 /*about styles*/
 
 #about {
-    background: white url('../images/about1.png') 90% no-repeat;
-    background-size: auto 100%;
+    background: white url('../images/about1.png') 75% no-repeat;
+    background-size: auto 75%;
     margin: 20px 0;
 }
 
@@ -212,7 +213,7 @@ body {
     color: #3F6433;
 }
 
-@media screen and ( max-width: 991px ) {
+@media screen and ( max-width: 899px ) {
     #about .container {
         background: rgba(255, 255, 255, 0.6);
     }
